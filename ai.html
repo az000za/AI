@@ -1,6 +1,21 @@
+<!DOCTYPE html>
 <html>
     <body id="root"></body>
-    <script type="text/javascript" filename="AI.js">
+    <script type="text/javascript" src="https://az000za.github.io/AI/openai.js"></script>
+    <script type="text/javascript" src="https://az000za.github.io/AI/bard.js"></script>
+    <script type="text/javascript" src="https://az000za.github.io/AI/gemini.js"></script>
+    <script type="text/javascript" src="https://az000za.github.io/AI/metaai.js"></script>
+    <script type="text/javascript" src="https://az000za.github.io/AI/alexa.js"></script>
+    <script type="text/javascript" src="https://az000za.github.io/AI/apple.js"></script>
+    <script type="text/javascript" src="https://az000za.github.io/AI/opensource"></script>
+    
+    <script type="text/javascript" src="https://az000za.github.io/AI/prompt-adapter.js"></script>
+    <script type="text/javascript" src="https://az000za.github.io/AI/consensus-adapter.js"></script>
+    <script type="text/javascript" src="https://az000za.github.io/AI/socialLinker-adapter.js"></script>
+    <script type="text/javascript" src="https://az000za.github.io/AI/aiLinker-adapter.js"></script>
+    <script type="text/javascript" src="https://az000za.github.io/AI/crawler-adapter.js"></script>
+
+    <script type="text/javascript" filename="https://az000za.github.io/AI/AI.js">
         new DevCore().FunC(
             class AI {
               constructor(){
@@ -11,12 +26,14 @@
                     - on node.js
                 */
               }
-              prompt(){}
+              prompt(tkn, service, prompt){}
               consensus(){}
-              socialLinker(){}
               aiLinker(){}
+              professionalLinker(){}
+              socialLinker(){}
+              crawler(){}
               ais=[]
             }
-        }.Run();
+        ).Run();
     </script>
-  </html>
+</html>
